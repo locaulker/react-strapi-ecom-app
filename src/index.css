@@ -3,7 +3,7 @@
 Fonts
 ======
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400|Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,700|Kaushan+Script&display=swap");
 /* 
 ====== 
 Variables 
@@ -160,10 +160,10 @@ Header
   align-items: center;
 }
 .header a {
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 0 0.25rem;
   font-size: 0.85rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: var(--mainTransition);
 }
 .header a:hover {
@@ -171,7 +171,7 @@ Header
 }
 @media screen and (min-width: 768px) {
   .header a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 0 0.5rem;
   }
 }
@@ -273,11 +273,12 @@ Product List
 }
 .section-title,
 .search-errors {
-  font-size: 2rem;
-  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 .products-center {
   width: var(--smallWidth);

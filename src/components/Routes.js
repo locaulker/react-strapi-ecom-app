@@ -12,11 +12,13 @@ import Home from "../pages/Home"
 import Login from "../pages/Login"
 import Products from "../pages/Products"
 import ProductDetails from "../pages/ProductDetails"
+import Header from "./Header"
 
 // components
 const Routes = () => {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />
