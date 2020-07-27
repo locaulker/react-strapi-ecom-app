@@ -201,12 +201,16 @@ Hero
 .hero h1 {
   font-size: 3rem;
   /* text-transform: capitalize; */
+  color: var(--mainWhite);
+  font-weight: 100;
 }
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 1.75rem;
+  color: var(--mainWhite);
+  font-weight: normal;
 }
 .btn-hero {
   border-radius: 0;
