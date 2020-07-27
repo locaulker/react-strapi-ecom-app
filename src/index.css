@@ -163,7 +163,8 @@ Header
   text-transform: uppercase;
   margin: 0 0.25rem;
   font-size: 0.85rem;
-  letter-spacing: 1px;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
   transition: var(--mainTransition);
 }
 .header a:hover {
@@ -199,12 +200,12 @@ Hero
 }
 .hero h1 {
   font-size: 3rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-bottom: 1.75rem;
 }
 .btn-hero {
@@ -213,10 +214,10 @@ Hero
   padding: 0.8rem 1.5rem;
   background: var(--primaryDarkColor);
   border-color: var(--primaryDarkColor);
-  color: var(--mainBlack);
+  color: var(--mainWhite);
 }
 .btn-hero:hover {
-  color: var(--primaryDarkColor);
+  color: var(--mainWhite);
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -225,9 +226,13 @@ Hero
 
   .hero h1 {
     font-size: 5.3rem;
+    font-weight: 100;
+    color: var(--mainWhite);
   }
   .hero p {
     font-size: 2.3rem;
+    font-weight: normal;
+    color: var(--mainWhite);
   }
   .btn-hero {
     font-size: 1.2rem;

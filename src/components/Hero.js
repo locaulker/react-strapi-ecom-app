@@ -1,5 +1,17 @@
-import React from "react";
+import React from "react"
 
-export default function Hero() {
-  return <h1>hello from hero</h1>;
+const Hero = ({ children }) => {
+  return (
+    <div className="hero">
+      <div className="banner">
+        <h1>Vintage Store</h1>
+        <p>
+          <em>... shop with confidence</em>
+        </p>
+        {children}
+      </div>
+    </div>
+  )
 }
+
+export default Hero
