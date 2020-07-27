@@ -3,7 +3,7 @@
 Fonts
 ======
 */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400|Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400|Kaushan+Script&display=swap");
 /* 
 ====== 
 Variables 
@@ -14,7 +14,7 @@ Variables
   /* --primaryDarkColor: #4e1d51; */
   --primaryColor: #f15025;
   --primaryDarkColor: #c02c03;
-  --primaryFont: "Catamaran", sans-serif;
+  --primaryFont: "Raleway", sans-serif;
   --slantedFont: "Kaushan Script", cursive;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -25,7 +25,7 @@ Variables
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
+  --mainSpacing: 0.1rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
