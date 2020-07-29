@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
     return <Loading />
   }
 
-  return <ProductList title="featured products" products={featured} />
+  return <ProductList title="featured" products={featured} />
 }
 
 export default FeaturedProducts

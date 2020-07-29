@@ -8,7 +8,7 @@ const Home = () => {
     <React.Fragment>
       <Hero>
         <Link to="/products" className="btn btn-primary btn-hero">
-          Our Products
+          All Products
         </Link>
       </Hero>
       <FeaturedProducts />

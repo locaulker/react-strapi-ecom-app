@@ -10,5 +10,5 @@ export default function Products() {
     return <Loading />
   }
 
-  return <ProductList title="Our Products" products={products} />
+  return <ProductList title="Products" products={products} />
 }
