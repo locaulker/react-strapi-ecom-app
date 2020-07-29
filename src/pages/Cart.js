@@ -1,5 +1,15 @@
-import React from "react";
+import React from "react"
+import { CartContext } from "../context/cart.context"
 
-export default function Cart() {
-  return <h1>hello from cart page</h1>;
+const Cart = () => {
+  const { cart, total } = React.useContext(CartContext)
+  console.log(cart, total)
+
+  return (
+    <div>
+      <h1>hello from cartPage</h1>
+    </div>
+  )
 }
+
+export default Cart
