@@ -46,7 +46,19 @@ const CartProvider = ({ children }) => {
   }
 
   // decrease Quantity
-  const decreaseQuantity = id => {}
+  const decreaseQuantity = (id, quantity) => {
+    if (quantity === 1) {
+      removeItem(id)
+      return
+    } else {
+      const newCart = [...cart].map(item => {
+        return item.id === id
+          ? { ...item, quantity: item.quantity - 1 }
+          : { ...item }
+      })
+      setCart(newCart)
+    }
+  }
 
   // add to cart
   const addToCart = product => {}

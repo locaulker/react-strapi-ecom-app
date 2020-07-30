@@ -4,7 +4,9 @@ import { CartContext } from "../../context/cart.context"
 
 const CartItem = ({ id, image, title, price, quantity }) => {
   // cart context
-  const { removeItem, increaseQuantity } = React.useContext(CartContext)
+  const { removeItem, increaseQuantity, decreaseQuantity } = React.useContext(
+    CartContext
+  )
 
   return (
     <article className="cart-item">
@@ -36,7 +38,7 @@ const CartItem = ({ id, image, title, price, quantity }) => {
           type="button"
           className="cart-btn quantity-btn"
           onClick={() => {
-            console.log("qty decrease")
+            decreaseQuantity(id, quantity)
           }}
         >
           <FaAngleDown />
