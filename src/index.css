@@ -439,7 +439,7 @@ Cart
   margin: 0.5rem 0;
   letter-spacing: var(--mainSpacing);
 }
-.item-amount {
+.item-quantity {
   text-align: center;
   margin-bottom: 0;
 }
@@ -454,7 +454,7 @@ Cart
   cursor: pointer;
   font-size: 0.8rem;
 }
-.amount-btn {
+.quantity-btn {
   color: var(--primaryColor);
   font-size: 1rem;
 }
