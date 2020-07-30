@@ -26,7 +26,14 @@ const CartProvider = ({ children }) => {
   }, [cart])
 
   // remove item
-  const removeItem = id => {}
+  const removeItem = id => {
+    // Method 1
+    let newCart = [...cart].filter(item => item.id !== id)
+    setCart(newCart)
+
+    // Method 2
+    // setCart([...cart].filter(item => item.id !== id))
+  }
 
   // remove item
   const increaseQuantity = id => {}

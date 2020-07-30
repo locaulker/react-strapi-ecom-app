@@ -4,6 +4,7 @@ import { CartContext } from "../../context/cart.context"
 
 const CartItem = ({ id, image, title, price, quantity }) => {
   // cart context
+  const { removeItem } = React.useContext(CartContext)
 
   return (
     <article className="cart-item">
@@ -14,7 +15,7 @@ const CartItem = ({ id, image, title, price, quantity }) => {
         <button
           className="cart-btn remove-btn"
           onClick={() => {
-            console.log("Item Removed")
+            removeItem(id)
           }}
         >
           Remove
