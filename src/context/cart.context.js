@@ -4,7 +4,7 @@ import localCart from "../utils/localCart"
 const CartContext = React.createContext()
 
 const CartProvider = ({ children }) => {
-  const [cart, setCart] = React.useState(localCart)
+  const [cart, setCart] = React.useState([])
   const [total, setTotal] = React.useState(0)
   const [cartItems, setCartItems] = React.useState(0)
 
@@ -61,10 +61,29 @@ const CartProvider = ({ children }) => {
   }
 
   // add to cart
-  const addToCart = product => {}
+  const addToCart = product => {
+    const {
+      id,
+      image: { url },
+      title,
+      price,
+    } = product
+
+    const item = [...cart].find(item => item.id === id)
+    if (item) {
+      increaseQuantity(id)
+      return
+    }
+
+    const newItem = { id, image: url, title, price, quantity: 1 }
+    const newCart = [...cart, newItem]
+    setCart(newCart)
+  }
 
   // clear cart
-  const clearCart = () => {}
+  const clearCart = () => {
+    setCart([])
+  }
 
   return (
     <CartContext.Provider
@@ -76,7 +95,7 @@ const CartProvider = ({ children }) => {
         increaseQuantity,
         decreaseQuantity,
         addToCart,
-        clearCart
+        clearCart,
       }}
     >
       {children}
