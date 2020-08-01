@@ -1,5 +1,5 @@
 import React from "react"
-import localCart from "../utils/localCart"
+// import localCart from "../utils/localCart"
 
 const getCartFromLocalStorage = () => {
   return localStorage.getItem("cart")
